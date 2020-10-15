@@ -1,0 +1,2051 @@
+/********************************************** CSS RESET **********************************************/
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: calibri; 
+    position: relative;
+    float: left;
+    width: 100%;
+    min-width: 370px;
+    margin: 0;
+    background: #fff;
+}
+body.active {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q{
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+p{
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+p:last-of-type {
+    margin-bottom: 0;
+}
+a{
+    text-decoration:none;
+}
+/********************************************** WRAPPER AND CONTAINER **********************************************/
+.wrapper,
+.row {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1547px;
+    padding: 0 20px;
+}
+.fa {
+    color: #ab92bf;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.disable{
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+/********************************************** HEADER **********************************************/
+.content {
+    float: left;
+    width: 100%;
+}
+.center{
+    width: 87%;
+    margin: 0 auto;
+    display: block;
+}
+.darkgrey {
+    background: #31302d;
+}
+#logo {
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+}
+/* #menu { */
+    /* float: left; */
+    /* width: 100%; */
+/* } */
+
+/* #menu ul { */
+    /* float: left; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* list-style-type: none; */
+/* } */
+
+/* #menu ul li { */
+    /* float: left; */
+/* } */
+
+/* #menu ul li a { */
+    /* float: left; */
+    /* display: block; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-size: 16px; */
+    /* text-transform: uppercase; */
+    /* color: #fff; */
+    /* padding: 18px 20px; */
+/* } */
+
+/* #menu ul li a:hover, #menu ul li a:active, #menu ul li a.active { */
+    /* background: #00b3c1; */
+/* } */
+/* #menu ul li ul { */
+    /* display: none; */
+    /* float: left; */
+    /* position: absolute; */
+    /* z-index: 999; */
+    /* margin: 52px 0 0 0; */
+    /* background: #31302d; */
+    /* width:300px; */
+/* } */
+/* #menu ul li ul li { */
+    /* float:left; */
+    /* width:100%; */
+/* } */
+/* #menu ul li ul li a { */
+    /* float:left; */
+    /* width:100%; */
+/* } */
+/* #menu ul li:hover ul { */
+    /* display: block; */
+/* } */
+/* #usps { */
+    /* float: left; */
+    /* width: 100%; */
+    /* margin: 30px 0 40px 0; */
+/* } */
+.usp {
+    float: left;
+    width: 16.6%;
+    display: block;
+    text-align: center;
+}
+.usp img {
+    margin: 0 0 10px 0;
+}
+.usp span {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #31302d;
+    font-family: 'Roboto', sans-serif;
+}
+/********************************************** FILTERS **********************************************/
+.filters{
+    color: black;
+    float: left;
+    width: 19.5%;
+}
+.allFilterBar{
+    background: #646464;
+    color: white;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    margin: 0px 0 30px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.topFilterContainer, .ratFilterContainer, .facFilterContainer, .extFilterContainer, .locFilterContainer, .appFilterContainer{
+    background: #646464;
+    float: left;
+    width: 100%;
+    border-radius: 3px;
+    margin: 0px 0 6% 0;
+}
+.allGymsBtn{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 3px;
+    background: white;
+    text-align: center;
+    word-break:break-all;
+    cursor: pointer;
+    border: solid 1.2px transparent;
+    transition: all 0.3s ease 0s;
+}
+.allGymsBtn:hover{
+    border: solid 1.2px #ab92bf;
+}
+.facilityBtn{
+    float: left;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 3px;
+    background: white;
+    text-align: center;
+    word-break: break-all;
+    cursor: pointer;
+    border: solid 1.2px red;
+}
+.dropdown li {
+    min-height: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.dropdown.active li{
+    min-height: 20px;
+    margin: 5px;
+    opacity: 1;
+    cursor: pointer;
+    position: relative;
+    transition:  0.2s ease-out;
+}
+span.arrowDown.active:after {
+    content: "\f077";
+}
+.ratingChild{
+    background: white;
+    margin: 10px 0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    float: left;
+    width: 60%;
+    text-align: center;
+}
+span.arrowDown:after {
+    content: "\f078";
+    color: #777;
+    margin-left: 1%;
+    font-family: FontAwesome;
+    font-size: 90%;
+}
+.dropdown li:nth-child(odd){
+    background: rgba(221, 221, 221, 0.5);
+}
+.fa.fa-table.top, .fa.fa-map-marker.top, .fa.fa-star.top{
+    font-size: 150%;
+}
+.fa.fa-table.top{
+    color: #735eaf;
+}
+.fa.fa-map-marker.top{
+    color: #f65259;
+}
+.fa.fa-star.top{
+    color: gold;
+    font-size: 20px;
+    background: white;
+    border-radius: 15px;
+    padding: 2px;
+    margin-left: 5px;
+}
+.topFilter{
+    background: #646464;
+    float: left;
+    width: 100%;
+    border-radius: 3px; 
+    margin: 0px 0 20px 0;
+    padding: 10px;;
+}
+.facFilter, .ratFilter, .extFilter, .locFilter, .appFilter, .accordion{
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    padding: 20px 0px 0 40px;
+}
+.ratFilter + div, .facFilter + div, .extFilter + div, .extFilter + div, .locFilter + div, .appFilter, .accordion{
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+input[type="checkbox"] {  
+    display: none;                                      
+}
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    -moz-box-shadow: inset 0 0 6px #b8c2cc;
+    -webkit-box-shadow: inset 0 0 6px #b8c2cc;
+    box-shadow: inset 0 0 4px #b8c2cc;
+    background: white;
+    float: left;
+    margin: 10px 20px 10px 20px;
+    position: relative;
+}
+input[type="checkbox"] + label span:after {
+    content: '';
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.15s;
+}
+
+input[type="checkbox"]:checked + label span {
+    border-radius: 2px;
+    -moz-box-shadow: inset 0 0 2px #ffffff;
+    -webkit-box-shadow: inset 0 0 2px #ffffff;
+    box-shadow: inset 0 0 2px #ffffff;
+}
+input[type="checkbox"]:checked + label span:after {
+    max-width: 35px;
+    content: '\f00c';
+    font-family: fontAwesome;
+    color: #ab92bf;
+    opacity: 0.7;
+    top: -7px;
+    font-size: 30px;
+    position: absolute;
+}
+label {
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 45px;
+    color: white;
+}
+.closebtn {
+    font-weight: bold;
+    float: right;
+    font-size: 31px;
+    cursor: pointer;
+}
+.alertMsg2:hover {
+    background: #ab92bf;
+}
+
+/********************************************** GYMS **********************************************/
+.pageTitle {
+    font-size: 40px;
+    float: left;
+    font-weight: bold;
+    width: 77%;
+    color: #646464;
+}
+.lowerHr{
+    border-bottom: 0.2px solid #646464;
+    width: 78%;
+    margin-top: -6px;
+    margin-bottom: 10px;
+    float: left;
+    opacity: 0.5;
+}
+.compareDiv{
+    float: right;
+    position: relative;
+    width: 155px;
+    right: 80px;
+    margin: 0%;
+}
+.compareMsg {
+    z-index: 1;
+    float: left;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    -moz-box-shadow: inset 0px 34px 0px -15px #4f4f4f;
+    background-color: #97ce64;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    position: relative;
+}
+.compareMsgButton{
+    width: 100%;
+    border-radius: 2px;
+    text-align: center;
+    -moz-box-shadow: inset 0px 34px 0px -15px #4f4f4f;
+    background-color: #97ce64;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    top: 0;
+    right: 180px;
+}
+.compareTitle{
+    text-shadow: 2px 2px 5px #646464;
+}
+.compareTitle p {
+    margin: 0;
+}
+.compareIconC{
+    margin: 10px auto 0px auto;
+    width: 50px;
+}
+.compareIcon{
+    width: 80%;
+}
+.alertMsg1{
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    color: black;
+    z-index: 1;
+    display: none;
+}
+.alertMsg2 {
+    width: 100%;
+    height: 100;
+    top: -10px;
+    position: absolute;
+    right: 200px;
+}
+.alertMsg2{
+    font-size: 12px;
+    float: right;
+    padding: 10px 20px;
+    border-radius: 2px;
+    background: black;
+    margin: 10px 0px 20px 0px;
+    color: white;
+    display: none;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+    text-align: center;
+    -moz-box-shadow: inset 0px 34px 0px -15px #4f4f4f;
+    background-color: #ab92bf;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.1s ease 0s;
+}
+.compareCounter{
+    float: right;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-shadow: 2px 2px 5px #646464;
+}
+.compareMsgButton:hover {
+    background: black;
+}
+.alertMsg2:hover {
+    background: black;
+}
+.compareMsgButton.compareMsgButton{
+    z-index: 1;
+}
+.compareMsgButton.compareMsgButton-fixed {
+    position: static;
+    width: 100%;
+    text-align: center;
+    -moz-box-shadow: inset 0px 34px 0px -15px #4f4f4f;
+    background-color: #97ce64;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    top: 130%;
+    right: 0;
+}
+.compareMsgButton.active, .compareMsgButton.compareMsgButton-fixed.active{
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    text-transform: uppercase;
+    background: black;
+}
+.compareMsgButton.compareMsgButton-fixed:hover {
+    background: black;
+}
+.boxLine{
+    position: absolute;
+    width: 50px;
+    top: 40px;
+    left: 160px;
+    height: 30px;
+    margin: 0;
+    z-index: 1;
+    border-top: solid 2px #97ce64;
+    border-right: solid 2px #97ce64;
+}
+.compareBox{
+    z-index: 1;
+    background: white;
+    min-width: 30px;
+    width: 30px;
+    border-radius: 4px;
+    height: 30px;
+    position: absolute;
+    right: 1%;
+    margin: 0 0 0 0;
+    -moz-box-shadow: inset 0 0 6px #b8c2cc;
+    -webkit-box-shadow: inset 0 0 6px #646464;
+    box-shadow: inset 0 0 6px #646464;
+    cursor: pointer;
+}
+.fa.fa-close{
+    color: #97ce64;
+    float: left;
+    font-size: 35px;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+/********************************************** Animations **********************************************/
+.fa.fa-close {
+    animation: growClose .4s forwards;
+    -webkit-animation: growClose .4s forwards;
+    transform-origin: 50% 40%;
+    -webkit-transform-origin: 50% 40%;
+}
+@keyframes growClose {
+    0% {
+        transform: scale(0.0);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+@keyframes slideUp {
+    0% {
+        transform: scale(0.0);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+/********************************************** gymCardContainer **********************************************/
+.gymCardContainer:nth-child(1){
+    margin-top: 10px;
+}
+.gymCardContainer {
+    float: left;
+    height: 100%;
+    width: 100%;
+    margin-top: 4%;
+    border-radius: 3px;
+    position: relative;
+    padding: 1.5%;  
+}
+.gymCardContainer.active{           
+    -webkit-box-shadow: 10px 0px 87px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 0px 87px -24px rgba(0,0,0,0.75);
+    box-shadow: 2px 5px 15px 1px rgba(0,0,0,0.35);
+    filter: alpha(opacity=50);
+    opacity: 1;
+    margin-left: 3px;
+    transition: margin 150ms;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(249,249,249,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%,rgba(249,249,249,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 1%,rgba(249,249,249,0.5) 100%);
+}
+.fa.fa-close.active{
+    display:block;
+}
+.gymImgContainer{
+    float: left;
+    width: 20%;
+    height: 220%;
+    min-width: 40px;
+    overflow: hidden;
+}
+.gymImg{
+    border-radius: 3px;
+    float: left;
+    height: 55%;
+    min-width: 90px;
+    width: 90%;
+    border: 1px solid #646464;
+    position: relative;
+    margin: 3px 0 0% 0;
+}
+.gymLogo{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: 1px solid white;
+    bottom: 5px;
+    position: absolute;
+}
+.gymBasicInfo{
+    float: left;
+    width: 90%;
+    height: 39%;
+    padding: 10% 0 0 0;
+    font-size: 100%;
+}
+.gymStreet{
+    padding: 1%;
+}
+.gymRating{
+    padding: 5% 10% 0% 1%;
+    font-size: 80%;
+}
+.gymPrice{
+    padding: 5% 1%;
+    font-size: 100%;    
+}
+.gymPrice > span > span{
+    font-size: 18px;
+}
+.gymCardContainer{
+    float: left;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 3px;
+    position: relative;
+    padding: 15px;
+}
+.gymImgContainer{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+.gymDates th{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+}
+.gymDates tr:nth-child(8){
+    border: none;
+display: none;
+}
+/**********gymImg************************************ gymInfoContainer **********************************************/
+.gymTitle{
+    background: white;
+    position: relative;
+    width: calc(100% - 22%);
+    float: right;
+}
+.gyms{
+    background: white;
+    position: relative;
+    width: calc(100% - 22%);
+    float: right;
+}
+.gymInfoContainer{
+    float: left;
+    width: 80%;
+    min-width: 200px;
+    height: 59%;
+    min-height: 159px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.gymNameContainer{
+    float: left;
+    width: 80%;
+    position: relative;
+    word-break: break-all;
+}
+.gymName{
+    width: 100%;
+    float: left;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #ab92bf;
+    text-transform: uppercase;
+}
+.gymTextContentContainer{
+    float: left;
+    width: 85%; 
+}
+.gymTextContent{
+    float: left;
+    width: 100%;
+    min-height: 110px;
+    padding: 1% 1% 1% 0;
+    overflow: hidden;
+    line-height: 20px;
+    color: #7f7f7f;
+}
+.readMore{
+    float: left;
+    width: 100%;
+}
+.readMore a {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gymTextContent a{
+    color: grey;
+    font-weight: bold;
+}
+.gymDates{
+    float: left;
+    font-size: 14px;
+    width: 15%;
+}
+.gymDates table tr{
+    /*border-bottom:0.1px solid #646464;*/
+}
+.gymDates > table > tbody > tr:nth-child(7){
+    border: none;
+}
+.fl-l{
+    float: left;
+    width: 55%;
+    margin: 0 0 0 7%;
+}
+.gymIconsContainer{
+    min-width: 200px;
+    float: left;
+    width: 80%;
+    height: 39%;
+}
+.one{
+    width: 60%;
+    margin: 0%;
+    float: left;
+}
+.visitBtn {
+    float: right;
+    width: 20%;
+    opacity: 1;
+    /* color: white; */
+    background: #646464;
+    margin: 2.5% 1%;
+    border: 1.5px solid #97ce64;
+    border-radius: 2px;
+    padding: 2%;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    cursor: pointer;
+}
+.visitBtn a{
+    text-decoration: none;
+}
+.visitBtn:hover{
+    border: solid 1.5px #97ce64;
+}
+.visitBtn:hover > p > i{
+    color: #97ce64;
+}
+.visitBtn.active{
+    border: solid 1.5px #97ce64;
+    opacity: 1;
+}
+.visitBtn.active > p > i{
+    color: #97ce64;
+    text-decoration: none;
+}
+.visitBtn.inactive{
+    pointer-events: none;
+    border: 1.5px solid #ab92bf;
+    opacity: 0.3;
+    /* position: relative; */
+}
+.visitBtn.inactive:after {
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 50%; */
+    /* height: 1px; */
+    /* background: #000000; */
+    /* content: ""; */
+    /* width: 100%; */
+    /* display: block; */
+}
+.visitBtn.inactive > p > i{
+    color: #ab92bf;
+}
+.visitBtn.inactive:hover > p > i{
+    color: #ab92bf;
+}
+.frame{
+    width: 110%;
+    color: #7f7f7f;
+    min-width: 160px;
+    overflow-x: scroll;
+    margin: 1.6% 0 0 0;
+    white-space: nowrap;
+    float: right;
+}
+.frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.frame::-webkit-scrollbar:horizontal {
+    height: 11px; 
+}
+.frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 4px solid white;
+    background-color: rgba(184,194,204, 1);
+}
+.frame::-webkit-scrollbar-track {
+    background-color: #fff; 
+    border-radius: 4x; 
+} 
+/********************************************** gymIconsContainer **********************************************/
+.gymIcons{
+    float: left;
+    overflow: hidden;
+    width: 125%;
+    height: 90%;
+    padding: 0px 0px;
+    border: 0.1px dashed #646464;
+    position: relative;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.gymIcons span[class*="Icon"] {
+    opacity: 0.3;
+}
+.gymIcons span[class*="Icon"].active {
+    opacity: 1;
+}
+.gymIcon{
+    width: 100%;
+    opacity: 0.7;
+    margin: 60% 0% 20% 0%;
+}
+.visitBtn p{
+    font-size: 115%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+.fa-caret-right{
+    text-decoration: none;
+    color: white;
+    margin-left: 11%;
+}
+.gymIcons > span{
+    float: left;
+    width: 6%;
+    position: relative;
+    font-size: 60%;
+    text-align: center;
+    margin: 0% 2% 2% 2%;
+}
+span.accordion {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+    background-color: #646464;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    float: left;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    max-height: 80px;
+}
+span.accordion:after {
+    float: right;
+    content: "\f078";
+    color: white;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family: FontAwesome;
+    font-size: 20px;    
+}
+span.accordion.active:after {
+    content: "\f077";
+}
+span.accordion + div{
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+span.accordion.active + div{
+    margin-bottom: 20px;
+}
+.filterHamburger{
+    display: none;
+}
+.open{
+    float: right;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.backBtn{
+    text-decoration: none;
+    color: #222;
+}
+.backBtn{
+    width: 20%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 1%;
+    position: relative;
+    border: 1.5px solid #ab92bf;
+    padding: 1%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    background-color: white;
+}
+.backBtn:hover{
+    border: 1.5px solid #97ce64;
+}
+.backBtn p{
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+.compareDiv.compareDiv-fixed{
+    transition: all 0.5s ease 0s;
+}
+.compareDiv.compareDiv-fixed{
+    z-index: 100;
+    top: 3%;
+    right: 1%;
+    position: fixed;
+    transition: all 0.5s ease 0s;
+}
+.divider{
+    width: 90%;
+}
+
+/********************************************** RESPONSIVE **********************************************/
+@media screen and (max-width: 1400px) {
+.boxLine{
+    display: none;
+}
+}
+@media screen and (max-width: 1200px){
+.compareDiv {
+    /* margin: 0% 3.3%; */
+}
+.allGymsBtn{
+    width: 100%;
+}
+.topFilterContainer > div > div > div > i{
+    display: block;
+}
+}
+@media screen and (max-width: 1100px) {
+.center{
+    width: 85%;
+    margin: 0 15%;
+}
+.ratingChild{
+    width: 60%;
+}
+input[type="checkbox"] + label span {
+    margin: 0 20px 0 0px;
+}
+.ratingChild {
+    margin: 0 0 10px 0;
+    width: 60%;
+}
+}
+@media screen and (max-width: 1000px) {
+.gymCardContainer {
+    height: 100%;
+}
+.backBtn{
+    width: 70%;
+    padding: 1%;
+}
+.gymImg{
+    width: 56%;
+    background-position: 80%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    margin: 0;
+    left: 0;
+}
+.gymLogo{
+    width: 40%;
+    position: relative;
+    top: 10%;
+}
+.gymBasicInfo{
+    text-align: center;
+    font-size: 16px;
+    padding: 2%;
+    width: 36%;
+    margin: 0 6%;
+    line-height: 14px;
+    float: right;
+    position: relative;
+}
+.gymLogo {
+    width: 70%;
+    top: 60%;
+}
+.gymImgContainer{
+    width: 100%;
+    position: relative;
+    margin: 1% 0;
+}
+.gymInfoContainer, .gymNameContainer, .gymDates{
+    width: 100%;
+}
+.gymStreet, .gymRating, .gymPrice{
+    padding: 3%;
+}
+.gymIconsContainer{
+    width: 100%;
+}
+.gymNameContainer {
+    position: static;
+}
+.gymName {
+    width: 100%;
+    margin: 1% 0;
+    text-align: left;
+}
+.compareBox {
+    z-index: 1;
+    background: white;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -2%;
+    right: 2%;
+    top: 4%;
+    margin: 0;
+    -moz-box-shadow: inset 0 0 6px #b8c2cc;
+    -webkit-box-shadow: inset 0 0 6px #b8c2cc;
+    box-shadow: inset 0 0 6px #b8c2cc;
+    cursor: pointer;
+}
+.frame {
+    font-size: 12px;
+    margin: 1% 0;
+    padding: 0% 10%;
+}
+
+.gymTextContent {
+    padding: 1% 0%;
+}
+.gymPrice, .gymPrice > span > span{
+    font-size: 16px;
+}
+.gymDates{
+    text-align: left;
+    width: 15%;
+}
+.compareDiv {
+    /* margin: 0% 2.9%; */
+}
+.lowerHr {
+    width: 100%;
+}
+.compareDiv {
+    /* margin: 0% 4%; */
+}
+label{
+    font-size: 0.7rem;
+}
+}
+/********************************************** HAMBURGER POINT **********************************************/
+@media screen and (max-width: 900px) {
+/* header{ */
+    /* zoom: 50%; */
+    /* min-width: 840px; */
+/* } */
+.ratingChild{
+    margin: 10px 0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    float: left;
+    width: 60%;
+}
+.gyms, .gymTitle{
+    width: 100%;
+}
+.gyms{
+    margin: -30px 0 0 0;
+}
+.pageTitle {
+    margin: 10px auto;
+    width: 100%;
+}
+.filterandCompare{
+    float: left;
+    width: 100%;
+  /* min-width: 380px; */
+    margin: 0 0 5% 0;
+    display: block;
+}
+.filterHamburger{
+    display: inline-block;
+    z-index: 4;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+}
+.ratingChild {
+    width: 80%;
+}
+.filterHamburger .fa.fa-filter{
+    color: #00b3c1;
+}
+.filterHamburger > div{
+    padding: 1%;
+    float: left;
+    width: 150px;
+    margin-bottom: 10%;
+    cursor: pointer;
+    border: 2px solid #ab92bf;
+    border-radius: 2px;
+    padding: 2%;
+}
+.filterHamburger.active{
+    position: absolute;
+    top: 5px;
+    font-size: 1.5rem;
+    right: 0;
+}
+
+.filterHamburger.active span{
+    display:none;
+}
+.filterHamburger.active div{
+    border:0;   
+}
+.filterHamburger.active i{
+    display:block;
+    color:#fff;
+}
+.filterHamburger.active i{
+    float: right;
+}
+.filters{
+    height: 100%;
+    max-height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;    
+    overflow-y: hidden; 
+}
+.filters{
+    width: 100%;
+    height: auto;
+    float: left;    
+    overflow-y: auto;
+}
+.filters{
+    display: none;
+}
+.filters.active{
+    display: block;
+}
+.filters.active {
+    max-height: 100%;
+    min-height: 100%;
+    z-index: 4;
+    background: white;
+}
+.topFilterContainer{
+    position: relative;
+}
+.filters{
+    clear: left;
+    text-align: center;
+}
+.open{
+    display: block;
+}
+.remfilterContainers {
+    padding: 5px;
+}   
+.allFilterBar{
+    margin: 0px 0 2% 0;
+    padding: 2%;
+}
+.topFilterBtns{
+    width: 100%;
+    float: left;
+    /* margin: 10px auto; */
+}
+.topFilterContainer, .ratFilterContainer,.facFilterContainer, .extFilterContainer, .locFilterContainer, .appFilterContainer {
+    margin: 1% 0 0px 0;
+}
+.allGymsBtn{
+    width: 30%;
+    padding: 1.5%;
+}
+.allGymsBtn{
+    content: "\f078";
+    color: #777;
+    /* margin-left: 1%; */
+    /* font-weight: bold; */
+    font-family: FontAwesome;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 90%;
+}
+.topFilter {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0 0 20px 0;
+}
+.allFilterBar {
+    margin: 0px 0 2% 0;
+    padding: 2%;
+    z-index: 1;
+}
+
+input[type="checkbox"] + label span {
+    margin: 1.3% 5% 0 3%;
+}
+input[type="checkbox"]:checked + label span:after {
+    top: -7px;
+    right: -3px;
+    font-size: 30px;
+}
+label{
+    font-size: 1rem;
+}
+.gymIcons{
+    width: 120%;
+}
+.gymImg{
+    width: 40%;
+}
+.gymBasicInfo{
+    width: 30%;
+    line-height: 17px;
+}
+.directTitle{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 1%;
+}
+.directGymPrice > span{
+    font-size: 16px;
+}
+.directVisitBtn{
+    width: 90%;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid #ab92bf;
+    padding: 2%;
+}
+.directVisitBtnChild{
+    font-weight: 500;
+}
+.directFacTitle, .directTimeTitle, .directTarifTitle, .directExtrasTitle{
+    font-size: 18px;
+    padding: 2%;
+    font-weight: 700;
+    width: 90%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.directgymRating {
+    font-size: 16px;
+}
+.directTarif {
+    padding: 2% 30px;
+    font-size: 14px;
+}
+.gymCardContainer:nth-child(1) {
+    margin-top: 10px;
+}
+.timSpan1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.directExtra {
+    font-size: 14px;
+    padding: 1.7% 0;
+}
+.directgymRating > span {
+    font-size: 18px;
+}
+.directGymAddress {
+    padding: 0 0 1% 0;
+}
+.directTarif {
+    padding: 2% 20px;
+}
+
+}
+@media screen and (max-width: 850px) {
+.backBtn{
+    width: 90%;
+    padding: 2%;
+}
+}
+    
+@media screen and (max-width: 800px) {
+.compareMsg, .compareMsgButton{
+    float: right;
+    width: 70%;
+    font-size: 14px;
+    padding: 10px;
+}
+.divider{
+    display: none;
+}
+.gymIcons{
+    width: 100%;
+}
+.one{
+    width: 100%;
+    /* background: red; */
+}
+.visitBtn {
+    min-width: 105px;
+    width: 60%;
+    padding: 2%;
+    margin: 2.5% 20%;
+}
+.visitBtn p{
+    font-size: 140%;
+}
+.gymIcon {
+    margin: 25% 0 0 0;
+}
+}
+@media screen and (max-width: 775px) {
+    #logo{
+    margin: 0 30%;
+    width: 40%;
+    float: left;
+}
+#logo > a:nth-child(2) > img{ 
+    float: left;
+    width: 200%;
+    margin: 10px -50%;
+}
+.lowerHr{
+    visibility: hidden;
+}
+.boxLine {
+    margin-right: 7%;
+}
+.gymIcons > span > span{
+    display: none;
+}
+.center{
+    width: 50%;
+    margin: 0 auto;
+}
+.usp {
+    width: 33.3%;
+    margin: 0 auto;
+    display: block;
+}
+.frame{
+    text-align: center;
+    font-size: 12px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: 1% 0;
+}
+}
+@media screen and (max-width: 600px) {
+.topFilter{
+    min-width: 150px;
+    padding: 0px;
+    height: 100%;
+}
+.topFilterContainer, .ratFilterContainer,.facFilterContainer, .extFilterContainer, .locFilterContainer, .appFilterContainer{
+    min-width: 150px;
+    padding: 0px;
+    height: 100%;
+}
+.filterandCompare{
+    margin: 0 0 12% 0;
+}
+.gymPrice{
+    font-size: 14px;
+}
+.gymCardContainer.active {
+    margin-left: 0px;
+}
+.gymImg{
+    width: 50%;
+}
+.gymDates {
+    width: 100%;
+    margin: 5% 0;
+    min-height: 120px;
+}
+.filterHamburger{
+    width: 100%;
+    margin: 0;
+}
+.filterHamburger > div {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 5%;
+    width: 90%;
+}
+.alertMsg2 > strong{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.compareDiv {
+    margin: 0;
+    position: static;
+    width: 100%;
+}
+.container {
+    padding: 0 5px 0 15px
+}
+.compareMsg {
+    text-align: center;
+}
+.compareMsgButton{
+        text-align: center;
+}
+.gymBasicInfo{
+    width: 45%;
+    line-height: 17px;
+}
+.alertMsg2 {
+    text-align: center;
+    float: left;
+    position: static;
+    padding: 3%;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 3% 5%;
+    width: 90%;
+}
+.compareDiv.compareDiv-fixed{
+    position: static;
+}
+.compareMsgButton.compareMsgButton-fixed{
+    position: static;
+}
+.compareTitle > p {
+    margin: -4px;
+}
+.compareMsgButton.compareMsgButton {
+    z-index: 1;
+    position: static;
+    width: 90%;
+    padding: 1%;
+    margin: 0 5%;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+.gymName {
+    margin: 2% 0 0 0;
+    text-align: center;
+}
+.directTitle {
+    font-size: 16px;
+}
+.directGymAddress {
+    font-size: 12px;
+}
+.directGymLogo {
+    display: none;
+}
+.directgymRating {
+    font-size: 12px;
+}
+.directgymRating {
+    font-size: 12px;
+}
+.directGymPrice > span {
+    font-size: 14px;
+}
+.directGymAddress {
+    padding: 0;
+}
+.directFacTitle, .directTimeTitle, .directTarifTitle, .directExtrasTitle {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.directgymRating > span {
+    font-size: 16px;
+}
+.timSpan1{
+    font-size: 14px;
+    font-weight: 100;
+}
+.timSpan2,.timSpan3{
+    font-size: 14px;
+}
+.tot{
+    display: none;
+}
+.streep{
+    display: block;
+}
+.directVisitBtn {
+    margin-top: 2%;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-bottom: 2%;
+    border: 1px solid #ab92bf;
+    padding: 2%;
+}
+.gymName{
+    border-bottom: solid 1px #ab92bf;
+}
+.gymDates table {
+    width: 100%;
+    text-align: center;
+}
+.gymTextContent{
+    text-align: justify;
+    width: 100%;
+}
+.readMore{
+    margin: 5% 0;
+    text-align: center;
+}
+.gymTitle{
+    text-align: center;
+    font-size: 30px;
+}
+.gymDates > table > tbody > tr > td{
+    width: 50%;
+}
+.gymLogo{
+    top: 50%;
+    width: 100%;
+    height: 41px;
+}
+.directgymCardContainer {
+    width: 60%!important;
+    margin: 10px 20%!important;
+    -webkit-box-shadow: 10px 0px 37px -24px rgba(0,0,0,0.50);
+    -moz-box-shadow: 10px 0px 37px -24px rgba(0,0,0,0.50);
+    box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.35);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 1%, rgba(249,249,249,0.5) 50%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 1%,rgba(249,249,249,0.5) 50%);
+}
+.directFacTitle, .directTimeTitle, .directTarifTitle, .directExtrasTitle{
+    -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.17);
+    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.17);
+}
+.compareMsg, .compareMsgButton  {
+    padding: 0;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 3% 5%;
+    width: 90%;
+}
+.compareMsgButton:hover {
+    background-color: black;
+}
+.compareMsgButton.compareMsgButton-fixed:hover {
+    background: black;
+}
+.center{
+    width: 100%;
+    margin: 0;
+}
+.directTarif {
+    padding: 2% 5px;
+    line-height: 16px;
+    font-size: 12px;    
+}
+}
+@media screen and (max-width: 500px) {
+.visitBtn {
+    width: 100%;
+    margin: 3% 0%;
+}
+.gymTextContent{ 
+    margin: 5% 0;
+    display: none;
+}
+.directgymRating > span {
+    display: none;
+}
+.directFacTitle, .directTimeTitle, .directTarifTitle, .directExtrasTitle{
+    font-weight: 100;
+    letter-spacing: 0px;
+}
+.compareTitle{
+    float: left;
+    vertical-align: middle;
+    width: 100%; 
+}
+.compareIcon {
+    vertical-align: middle;
+    width: 80%;
+}
+.compareIconC {
+    /* float: right; */
+    line-height: 100%;
+    vertical-align: middle;
+    width: 15%;
+    margin: 0 auto
+}
+.gymCardContainer:nth-child(1) {
+    margin-top: 20px;
+}
+}
+@media screen and (max-width: 470px) {
+.gymBasicInfo {
+    width: 43%;
+}
+.timSpan1 {
+    text-transform: lowercase;
+}
+.facSpan1 {
+    display: block;
+    width: 60%;
+}
+.facSpan3{
+    width: 0%;
+}
+}
+@media screen and (max-width: 415px){
+.gyms > div{
+    width: 100%;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 400px) {
+.alertMsg2 > strong{    
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.closeBtn{
+    font-size: 20px;
+}   
+.boxLine{
+    display: none!important;
+}
+.allGymsBtn{
+    font-size: 60%;
+}
+.gyms > div{
+    width: 100%;
+}
+.usp {
+    width: 50%;
+}
+.usp img {
+    width: 40px;
+}
+}
+@media screen and (max-width: 350px) {
+.filterandCompare{
+    margin: 0 0 20% 0;
+}
+.center {
+    min-width: 100%!important;
+}
+.usp {
+    width: 100%;
+}
+}
+
+/********************************************** DIRECT COMPARISON **********************************************/
+.directgymCardContainer {
+    float: left;
+    width: 300px;
+    min-height: 1620px;
+    max-height: 1620px;
+    margin: 10px 0;
+    -webkit-box-shadow: 10px 0px 87px -24px rgba(0,0,0,0.50);
+    -moz-box-shadow: 10px 0px 87px -24px rgba(0,0,0,0.50);
+    box-shadow: 2px 5px 15px 1px rgba(0,0,0,0.35);
+    filter: alpha(opacity=30);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 1%, rgba(249,249,249,0.5) 50%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 1%,rgba(249,249,249,0.5) 50%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 1%,rgba(249,249,249,0.5) 50%);
+}
+.divider{
+    width: 90%;
+    margin: 3% 5%;
+    float: left;
+    border-bottom: solid 1px #1d1d1d;
+}
+.firstColum, .secondColum, .thirdColum, .fourthColum{
+    float: left;
+    width: 100%;
+}
+.secondColum > div > a > div > p > i{
+    color: #ab92bf;
+}
+.firstColumChild{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.directTitle{
+    text-transform: uppercase;
+    margin: 3% 0 0 0;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 2%;
+    font-weight: bold;
+    color: #ab92bf;
+}
+.directImg{
+    width: 260px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 3%;
+}
+.directGymLogo{
+    max-height: 60px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.directGymAddress{
+    font-size: 14px;
+    padding: 0 0 2% 0;
+}
+.directGymPrice{
+    font-size: 14px;
+    padding: 0 0 2% 0;
+}
+.directGymPrice > span{
+    font-size: 14px;
+    color: #363636;
+    margin: 5% 0;
+}
+
+.directPrice{
+    font-weight: bold;
+    font-size: 16px;
+    color: #ab92bf;
+}
+/********************************************** second Colum **********************************************/
+.secondColumChild{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.directVisitBtn{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 1.5px solid #ab92bf;
+    padding: 3%;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    box-shadow: 0px 0px 15px 1px rgba(50, 50, 50, 0.1);
+    background-color: white;
+}
+.directVisitBtnChild{
+    margin: 0 auto;
+    width: 50%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4c4c4c;
+}
+.directVisitBtn:hover{
+    border: solid 1.5px #97ce64;
+}
+.directVisitBtn:hover i{
+    color: #97ce64;
+}
+.directVisitBtn:hover
+.directTextContainer{}
+.directText{
+    padding: 2% 14% 4% 14%;
+    text-align: justify;
+    font-weight: 100;
+}
+/********************************************** third Colum **********************************************/
+.directgymRating{
+    font-size: 18px;
+    margin: 1% auto;
+    padding: 1% 0;
+    text-align: center;
+    display: block;
+}
+.thirdColumChild{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.directgymRating > span{
+    font-size: 20px;
+}
+.directFacContainer{
+    float: left;
+    width: 100%;        
+    margin: 2.5% 0;
+    margin-bottom: 5%;
+}
+.facSpan1{
+    width: 30%;
+    float: left;
+}
+.facSpan2{
+    text-align: center;
+    width: 40%;
+    float: left;   
+}
+.facSpan3{
+    width: 30%;
+    float: left;    
+}
+.directFac{
+    float: left;
+    width: 100%;
+    padding: 1%;
+}
+.directExtra:nth-child(even), .directTarif:nth-child(even), .directTime:nth-child(even), .directFac:nth-child(even){
+    background: rgba(229,229,229,0.5);
+}
+.directTimes > p:nth-child(even){
+    background: rgba(229,229,229,0.5);
+}
+.directFacs > div{
+    vertical-align: middle;
+}
+.facSpan3 > .fa-check{
+    vertical-align: middle;
+    color: #55ccd6;
+}
+.facSpan3 > .fa-times {
+    color: #ab92bf;
+}
+.directFacTitle, .directTimeTitle, .directTarifTitle, .directExtrasTitle{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 2%;
+    font-weight: bold;
+    color: #ab92bf;
+    background: white;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.47);
+    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.47);
+    word-wrap: break-word;
+}
+.directGymIconContainer{}
+.directGymIcon{}
+.directTimeContainer{
+    float: left;
+    width: 100%;
+    min-height: 236px;
+}
+
+.directTimes > p:nth-child(1){
+    margin-top: 10px; 
+}
+.directTimes > p{
+    margin: 1% 0;
+    padding: 1% 0;
+}
+.directTimes > div:nth-child(1) > p, .directExtras > div:nth-child(1) > p{
+    margin: 1%;
+    padding: 1%;
+}
+.directTimes > div:nth-child(1) > p:nth-child(even), .directExtras > div:nth-child(1) > p:nth-child(even){
+    background: rgba(229,229,229,0.5);
+}
+.directTimeR{
+    padding: 0 0.5%;
+}
+.timSpan234{
+    float: left;
+    width: 70%;
+}
+.timSpan1{
+    width: 30%;
+    float: left; 
+    font-weight: bold;
+    text-align: center;
+}
+.timSpan2{
+    width: 25%;
+    float: left; 
+    font-size: 16px;
+    color: #55ccd6; 
+    transform: scale(1,0.9);
+}
+.timSpan3{
+    width: 20%;
+    float: left;  
+    font-size: 12px;
+    padding: 0 3%;  
+    line-height: 140%;
+}
+.timSpan4{
+    width: 25%;
+    float: left;
+    font-size: 16px;
+    color: #55ccd6;    
+}
+.timSpanA{
+    width: 50%;
+    margin: 0 0%;
+    float: left;
+    font-size: 16px;
+    color: #55ccd6;
+    transform: scale(1,0.9);
+}
+.timSpanR{
+    width: 25%;
+    margin: 0%;
+    float: left;
+    font-size: 16px;
+    color: #55ccd6;
+    transform: scale(1,0.9);
+    line-height: 12px;
+    font-size: 12px;
+}
+.timSpanR2{
+    width: 25%;
+    margin: 0%;
+    float: left;
+    font-size: 16px;
+    color: #55ccd6;
+    transform: scale(1,0.9);
+    line-height: 12px;
+    font-size: 12px;
+}
+/********************************************** fourth Colum **********************************************/
+.fourthColumChild{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.directTarifsContainer{
+    float: left;
+    width: 100%;
+    min-height: 430px;
+}
+.directTarifs{
+    float: left;
+    width: 100%;
+    padding: 0.5%;
+    margin: 1% 0;
+}
+.directTarif{
+    padding: 1.5% 30px;
+    line-height: 14px;
+}
+.directExtrasContainer{
+    float: left;
+    width: 100%;
+    min-height: 410px;
+    max-height: 410px;
+    overflow: hidden;
+}
+.directExtras{
+    float: left;
+    width: 100%;
+    margin: 1% 0;
+}
+.directExtra{
+    padding: 2% 24px;
+}
+.directgymIcon{
+    width: 20%;
+    max-width: 40px;
+    max-height: 28px;
+    vertical-align: middle;
+}
+.streep{
+    display: none;
+}
+.compare_gyms_gym{
+    float: left;
+    margin: 0 1%;
+}
+#compare_gyms_left{
+    left: 0%; 
+}
+#compare_gyms_right{
+    left: 5%; 
+}
+#compare_gyms_left, #compare_gyms_right{
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    display: block; 
+}
+
+#compareid1, #compareid2, #compareid3, #compareid4, #compareid5, #compareid6{
+    display: none;
+}
+
+.content{
+    
+}
